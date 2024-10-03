@@ -1,102 +1,48 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tư vấn Dược</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        h2 {
-            color: #2c3e50;
-        }
-        .medication {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #fff;
-        }
-        .advice {
-            margin: 20px 0;
-            padding: 10px;
-            background-color: #e7f3fe;
-            border: 1px solid #b9e1fe;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Tư vấn Dược</h1>
-    
-    <div class="medication">
-        <h2>Thuốc Giảm Đau</h2>
-        <h3>Paracetamol</h3>
-        <img src="URL_HÌNH_ẢNH" alt="Paracetamol" style="width:100px;height:auto;">
-        <p><strong>Công dụng:</strong> Giảm đau, hạ sốt.</p>
-        <p><strong>Liều dùng:</strong> 500mg đến 1000mg mỗi 4-6 giờ.</p>
-        <p><strong>Tác dụng phụ:</strong> Có thể gây buồn nôn, dị ứng.</p>
-        <p><strong>Lưu ý:</strong> Không sử dụng quá liều quy định.</p>
-    </div>
+<div class="medication">
+    <h2>Thuốc Giảm Đau</h2>
+    <h3>Paracetamol</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Paracetamol.svg" alt="Paracetamol" style="width:100px;height:auto;">
+    <p><strong>Công dụng:</strong> Giảm đau, hạ sốt.</p>
+    <p><strong>Liều dùng:</strong> 500mg đến 1000mg mỗi 4-6 giờ.</p>
+    <p><strong>Tác dụng phụ:</strong> Có thể gây buồn nôn, dị ứng.</p>
+</div>
 
-    <div class="medication">
-        <h2>Thuốc Ho</h2>
-        <h3>Dextromethorphan</h3>
-        <img src="URL_HÌNH_ẢNH" alt="Dextromethorphan" style="width:100px;height:auto;">
-        <p><strong>Công dụng:</strong> Giảm ho.</p>
-        <p><strong>Liều dùng:</strong> Theo chỉ định của bác sĩ.</p>
-        <p><strong>Tác dụng phụ:</strong> Có thể gây chóng mặt, buồn nôn.</p>
-        <p><strong>Lưu ý:</strong> Không sử dụng cho trẻ em dưới 2 tuổi.</p>
-    </div>
+<div class="medication">
+    <h3>Ibuprofen</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Ibuprofen.svg" alt="Ibuprofen" style="width:100px;height:auto;">
+    <p><strong>Công dụng:</strong> Giảm đau, chống viêm.</p>
+    <p><strong>Liều dùng:</strong> 200mg đến 400mg mỗi 4-6 giờ.</p>
+    <p><strong>Tác dụng phụ:</strong> Có thể gây dạ dày khó chịu, buồn nôn.</p>
+</div>
 
-    <div class="advice">
-        <h2>Lời khuyên</h2>
-        <p>Nếu triệu chứng không cải thiện sau 3 ngày, hãy tham khảo ý kiến bác sĩ.</p>
-    </div>
+<div class="medication">
+    <h3>Aspirin</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Aspirin.svg" alt="Aspirin" style="width:100px;height:auto;">
+    <p><strong>Công dụng:</strong> Giảm đau, chống viêm và hạ sốt.</p>
+    <p><strong>Liều dùng:</strong> 300mg đến 1000mg mỗi 4-6 giờ.</p>
+    <p><strong>Tác dụng phụ:</strong> Có thể gây đau dạ dày, chảy máu.</p>
+</div>
 
-    <input type="text" id="userInput" placeholder="Nhập câu hỏi của bạn...">
-    <button id="sendButton">Gửi</button>
-    <div id="response"></div>
+<div class="medication">
+    <h3>Cetirizine</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Cetirizine.svg" alt="Cetirizine" style="width:100px;height:auto;">
+    <p><strong>Công dụng:</strong> Giảm triệu chứng dị ứng như ngứa, chảy nước mũi.</p>
+    <p><strong>Liều dùng:</strong> 10mg mỗi ngày.</p>
+    <p><strong>Tác dụng phụ:</strong> Có thể gây buồn ngủ.</p>
+</div>
 
-    <script>
-        $('#sendButton').click(function() {
-            const userInput = $('#userInput').val();
-            $('#response').append('<p><strong>Bạn:</strong> ' + userInput + '</p>');
-            $('#userInput').val('');
+<div class="medication">
+    <h3>Loperamide</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Loperamide.svg" alt="Loperamide" style="width:100px;height:auto;">
+    <p><strong>Công dụng:</strong> Điều trị tiêu chảy.</p>
+    <p><strong>Liều dùng:</strong> 2mg sau mỗi lần đi ngoài, tối đa 8mg/ngày.</p>
+    <p><strong>Tác dụng phụ:</strong> Có thể gây táo bón.</p>
+</div>
 
-            // Gọi hàm xử lý API ở đây
-            sendToAI(userInput);
-        });
-
-        function sendToAI(userInput) {
-            const apiKey = 'YOUR_API_KEY'; // Thay thế 'YOUR_API_KEY' bằng API Key của bạn
-            const endpoint = 'https://api.openai.com/v1/chat/completions';
-
-            $.ajax({
-                type: 'POST',
-                url: endpoint,
-                headers: {
-                    'Authorization': 'Bearer ' + apiKey,
-                    'Content-Type': 'application/json'
-                },
-                data: JSON.stringify({
-                    model: "gpt-3.5-turbo",
-                    messages: [{ role: "user", content: userInput }]
-                }),
-                success: function(response) {
-                    const aiResponse = response.choices[0].message.content;
-                    $('#response').append('<p><strong>AI:</strong> ' + aiResponse + '</p>');
-                },
-                error: function(err) {
-                    console.error(err);
-                    $('#response').append('<p><strong>Lỗi:</strong> Không thể kết nối đến AI.</p>');
-                }
-            });
-        }
-    </script>
-</body>
-</html>
+<div class="medication">
+    <h3>Omeprazole</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Omeprazole.svg" alt="Omeprazole" style="width:100px;height:auto;">
+    <p><strong>Công dụng:</strong> Điều trị trào ngược dạ dày thực quản, loét dạ dày.</p>
+    <p><strong>Liều dùng:</strong> 20mg mỗi ngày.</p>
+    <p><strong>Tác dụng phụ:</strong> Có thể gây đau đầu, tiêu chảy.</p>
+</div>
