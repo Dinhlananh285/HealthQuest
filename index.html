@@ -3,50 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthQuest - Tư vấn dược</title>
+    <title>Tư vấn Dược</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .medication {
+            margin-bottom: 20px;
+        }
+        .medication h3 {
             margin: 0;
-            padding: 0;
         }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        .medication p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Chào mừng đến với HealthQuest</h1>
-        <p>Tư vấn dược trực tuyến</p>
-    </header>
-    <main>
-        <h2>Các dịch vụ của chúng tôi</h2>
-        <ul>
-            <li>Tìm hiểu về công dụng của các loại thuốc</li>
-            <li>Tư vấn các triệu chứng và hướng dẫn sử dụng thuốc</li>
-            <li>Thông tin về dược phẩm và sức khỏe</li>
-        </ul>
-        <p>Hãy liên hệ với chúng tôi nếu bạn cần bất kỳ hỗ trợ nào!</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 HealthQuest. Tất cả quyền lợi được bảo lưu.</p>
-    </footer>
+    <h1>Tư vấn Dược</h1>
+
+    <div class="medication">
+        <h2>1. Ho</h2>
+        <h3>Paracetamol</h3>
+        <p><strong>Công dụng:</strong> Giảm đau, hạ sốt.</p>
+        <h3>Dextromethorphan</h3>
+        <p><strong>Công dụng:</strong> Giảm ho.</p>
+        <h3>Guaifenesin</h3>
+        <p><strong>Công dụng:</strong> Giúp làm loãng đờm.</p>
+    </div>
+
+    <div class="medication">
+        <h2>2. Sốt</h2>
+        <h3>Ibuprofen</h3>
+        <p><strong>Công dụng:</strong> Giảm đau, hạ sốt và chống viêm.</p>
+        <h3>Paracetamol</h3>
+        <p><strong>Công dụng:</strong> Giảm đau và hạ sốt.</p>
+    </div>
+
+    <div class="medication">
+        <h2>3. Đau dạ dày</h2>
+        <h3>Omeprazole</h3>
+        <p><strong>Công dụng:</strong> Giảm sản xuất axit dạ dày.</p>
+        <h3>Ranitidine</h3>
+        <p><strong>Công dụng:</strong> Làm giảm axit dạ dày.</p>
+        <h3>Simethicone</h3>
+        <p><strong>Công dụng:</strong> Giúp giảm đầy hơi.</p>
+    </div>
+
+    <div class="medication">
+        <h2>4. Mề đay (dị ứng)</h2>
+        <h3>Cetirizine</h3>
+        <p><strong>Công dụng:</strong> Làm giảm triệu chứng dị ứng.</p>
+        <h3>Loratadine</h3>
+        <p><strong>Công dụng:</strong> Giảm triệu chứng dị ứng.</p>
+        <h3>Hydroxyzine</h3>
+        <p><strong>Công dụng:</strong> Thuốc kháng histamine mạnh hơn.</p>
+    </div>
+
+    <div class="medication">
+        <h2>5. Đau đầu</h2>
+        <h3>Aspirin</h3>
+        <p><strong>Công dụng:</strong> Giảm đau, hạ sốt và chống viêm.</p>
+        <h3>Naproxen</h3>
+        <p><strong>Công dụng:</strong> Giảm đau và viêm.</p>
+    </div>
+
+    <div class="medication">
+        <h2>6. Cảm cúm và cảm lạnh</h2>
+        <h3>Loratadine</h3>
+        <p><strong>Công dụng:</strong> Làm giảm triệu chứng dị ứng.</p>
+        <h3>Phenylephrine</h3>
+        <p><strong>Công dụng:</strong> Giảm nghẹt mũi.</p>
+    </div>
+
+    <div class="medication">
+        <h2>7. Tiêu hóa</h2>
+        <h3>Loperamide</h3>
+        <p><strong>Công dụng:</strong> Giảm tiêu chảy.</p>
+        <h3>Probiotic</h3>
+        <p><strong>Công dụng:</strong> Cải thiện sức khỏe đường ruột.</p>
+    </div>
+
+    <div class="medication">
+        <h2>8. Dị ứng và ngứa</h2>
+        <h3>Diphenhydramine</h3>
+        <p><strong>Công dụng:</strong> Giảm triệu chứng dị ứng và ngứa.</p>
+        <h3>Fexofenadine</h3>
+        <p><strong>Công dụng:</strong> Làm giảm triệu chứng dị ứng mà không gây buồn ngủ.</p>
+    </div>
+
+    <div class="medication">
+        <h2>9. Các triệu chứng tiêu hóa khác</h2>
+        <h3>Omeprazole</h3>
+        <p><strong>Công dụng:</strong> Giảm sản xuất axit dạ dày.</p>
+        <h3>Simethicone</h3>
+        <p><strong>Công dụng:</strong> Giúp giảm đầy hơi.</p>
+    </div>
+
+    <input type="text" id="userInput" placeholder="Nhập câu hỏi của bạn...">
+    <button id="sendButton">Gửi</button>
+    <div id="response"></div>
+
+    <script>
+        $('#sendButton').click(function() {
+            const userInput = $('#userInput').val();
+            $('#response').append('<p><strong>Bạn:</strong> ' + userInput + '</p>');
+            $('#userInput').val('');
+
+            // Gọi hàm xử lý API ở đây
+            sendToAI(userInput);
+        });
+
+        function sendToAI(userInput) {
+            const apiKey = 'YOUR_API_KEY'; // Thay thế 'YOUR_API_KEY' bằng API Key của bạn
+            const endpoint = 'https://api.openai.com/v1/chat/completions';
+
+            $.ajax({
+                type: 'POST',
+                url: endpoint,
+                headers: {
+                    'Authorization': 'Bearer ' + apiKey,
+                    'Content-Type': 'application/json'
+                },
+                data: JSON.stringify({
+                    model: "gpt-3.5-turbo",
+                    messages: [{ role: "user", content: userInput }]
+                }),
+                success: function(response) {
+                    const aiResponse = response.choices[0].message.content;
+                    $('#response').append('<p><strong>AI:</strong> ' + aiResponse + '</p>');
+                },
+                error: function(err) {
+                    console.error(err);
+                    $('#response').append('<p><strong>Lỗi:</strong> Không thể kết nối đến AI.</p>');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
